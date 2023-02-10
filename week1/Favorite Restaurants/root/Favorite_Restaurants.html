@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>My Five Favorite Restaurants in Panama City Beach Florida</title>
+    </head>
+
+    <body>
+        <h1>My Top 5 Restaurants in Panama City Beach Florida</h1>
+            <p>This site is all about my favorite restaurants in Panama City Beach.</p>
+
+        <h2 style="color:green">Here are some places I love to eat at</h2>
+        <ul>
+            <li>
+                <img src="https://images.squarespace-cdn.com/content/v1/55cf3e6ce4b0c22f9be24766/1486608459110-C2UNDHGE80E1RNO160J0/schooners-entrance.jpg?format=1500w" 
+                width="300">
+                <a href="https://www.schooners.com/" target="_blank" style="font-size:200%;">Schooners</a>
+            </li>
+            <li>
+                <img src="https://images.squarespace-cdn.com/content/v1/55cf3e6ce4b0c22f9be24766/1486829665560-SN31VFYIPKXA2G6GGIF2/pineapple-willys-entrance.jpg?format=1000w"
+                width="300">
+                <a href="https://pwillys.com/" target="_blank" style="font-size:200%;">Pineapple Willy's</a>
+            </li>
+            <li>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOuh1LxGcOHGB87tTCMjrkyyQNbKiYHB-X5NdqQ=s1360-w1360-h1020" 
+                width="300">
+                <a href="http://www.theback-porch.com/#home" target="_blank" style="font-size:200%;">The Back Porch Seafood and Oyster House</a>
+            </li>
+            <li>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPJQb5JxtewVYUMv6JpuWvZOqTDCamGpCzFPh7k=s1360-w1360-h1020" 
+                width="300">
+                <a href="http://www.nickssliceofbrooklyn.com/" target="_blank" style="font-size:200%;">Nick's Slice of Brooklyn Pizzeria & Bar</a>
+            </li>
+            <li>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNk1RbOD2rWKPwVnuw_0JiO73QGfXNHVT1H17M9=s1360-w1360-h1020" 
+                width="300">
+                <a href="https://bayoubills.com/" target="_blank" style="font-size:200%;">Bayou Bill's Crab House</a>
+                </li>
+        </ul>	
+        
+        <br><br>
+        <table>
+        <tr>
+            <th style="font-size:200%;">Restaurant</th>
+            <th style="font-size:200%;">Address</th>
+            <th style="font-size:200%;">Phone Number</th>
+        </tr>
+        <tr>
+            <td style="text-align:center;">Schooners</td>
+            <td style="text-align:center;"><i>5121 Gulf Drive Panama City Beach, FL 32408</i></td>
+            <td style="text-align:center;"><u>850-235-3555</u></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">Pineapple Willy's</td>
+            <td style="text-align:center;"><i>9875 South Thomas Drive Panama City Beach, Florida 32408</i></td>
+            <td style="text-align:center;"><u>850-235-0928</u></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">The Back Porch</td>
+            <td style="text-align:center;"><i>16220 Front Beach Road Panama City Beach, FL — 32413</i></td>
+            <td style="text-align:center;"><u>850-233-1750</u></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">Nick's Slice of Brooklyn Pizzeria & Bar</td>
+            <td style="text-align:center;"><i>13528 Front Beach Rd Panama City Beach FL 32407</i></td>
+            <td style="text-align:center;"><u>850-708-3177</u></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">Bayou Bill's Crab House</td>
+            <td style="text-align:center;"><i>23100 Front Beach Rd Panama City Beach, FL 32413</i></td>
+            <td style="text-align:center;"><u>850-235-1010</u></td>
+        </tr>
+        </table>
+        
+        <br><br>
+        <h2>Where do you want to eat?</h2>
+        <form>
+            <label for="name" style="color:brown">Enter Restaurant Name: </label>
+            <input type="text" id="name" name="name">
+        </form><br>
+        
+        <p><b>What kind of food do you like?</b></p>
+        <form>
+        <label for="seafood" style="background-color: aqua;">Seafood</label>
+            <input type="checkbox" id="seafood" name="food"><br> 
+        
+        <label for="pizza" style="background-color: red;">Pizza</label>
+            <input type="checkbox" id="pizza" name="food"><br>
+
+        <label for="steak" style="background-color: brown; color: white;">Steak</label>
+            <input type="checkbox" id="steak" name="food"><br>
+
+        <label for="burgers" style="background-color: orange;">Burgers</label>
+            <input type="checkbox" id="burgers" name="food"><br>
+
+        <label for="type" style="font-family: 'Courier New', Courier, monospace;">How much are you willing to spend?</label>
+            <select id="type" name="type">
+                <option value="little">little</option>
+                <option value="moderate">moderate</option>
+                <option value="a lot">a lot</option>
+            </select>
+            <br><br>
+            <textarea id="bio" name="allergens" rows="7" cols="50">
+            Do you have any food allergens? 
+            </textarea>
+            <br><br>
+            <input type=submit value="Submit">
+        </form>
+        <br><br>
+        
+    </body>
+</html>
