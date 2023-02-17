@@ -1,14 +1,25 @@
-#cart-icon{
+#cart-icon {
     width: 20px;
     height: 20px;
     filter: invert(1);
     object-position: 0px 4px;
 }
 
-#search-icon{
+#search-icon {
     width: 12px;
     height: 12px;
     filter: invert(1);
+}
+
+#lift-off {
+    height: 500px;
+    box-shadow: 20px 20px 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#lift-off:hover {
+    box-shadow: 20px 20px 100px orange;
 }
 
 .nav-list {
@@ -49,13 +60,7 @@
     justify-content: left;
 }
 
-p {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: 'Space Mono', monospace;
-}
-
-h1, h2{
+h1, h2, p{
     font-family: 'Space Mono', monospace;
 }
 
@@ -104,16 +109,3 @@ a:hover{
 form a{
     line-height: 36px;
 }
-
-div img{
-    width: 600px;
-    height: 300px;
-    text-align: center;
-    box-shadow: 20px 20px 50px;
-}
-
-div img:hover{
-    box-shadow: 20px 20px 50px orange;
-}
-
-

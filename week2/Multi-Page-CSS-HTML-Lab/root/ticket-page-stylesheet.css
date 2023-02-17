@@ -49,10 +49,12 @@
     justify-content: left;
 }
 
-p {
+.ticket {
+    height: 20px;
+    width: 50px;
+    margin: 5px;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: 'Space Mono', monospace;
 }
 
 h1, h2{
@@ -115,5 +117,3 @@ div img{
 div img:hover{
     box-shadow: 20px 20px 50px orange;
 }
-
-
