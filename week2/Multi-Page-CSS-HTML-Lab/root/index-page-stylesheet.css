@@ -105,14 +105,14 @@ form a{
     line-height: 36px;
 }
 
-div img{
+img{
     width: 600px;
     height: 300px;
     text-align: center;
     box-shadow: 20px 20px 50px;
 }
 
-div img:hover{
+img:hover{
     box-shadow: 20px 20px 50px orange;
 }
 
