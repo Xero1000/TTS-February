@@ -2,6 +2,18 @@
     text-align: center;
 }
 
+#cart-icon{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin-left: 2%;
+}
+
+.sign-in-cart {
+    text-align: end;
+    margin-left: 3em;
+}
+
 .nav-list {
     /* display: grid;
     background-color: black;

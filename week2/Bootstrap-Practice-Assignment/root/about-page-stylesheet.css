@@ -1,15 +1,10 @@
-/* #cart-icon {
+#cart-icon{
     width: 20px;
     height: 20px;
     filter: invert(1);
-    object-position: 0px 4px;
+    margin-left: 2%;
 }
 
-#search-icon {
-    width: 12px;
-    height: 12px;
-    filter: invert(1);
-} */
 #mission-heading{
     text-align: center;
 }
@@ -22,6 +17,11 @@
 
 #lift-off:hover {
     box-shadow: 20px 20px 100px orange;
+}
+
+.sign-in-cart {
+    text-align: end;
+    margin-left: 3em;
 }
 
 .navbar-nav{

@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+#cart-icon{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin-left: 2%;
+}
+
 .footer-list {
     display: flex;
     background-color: black;
@@ -11,6 +18,11 @@
     padding-left: 40px;
     align-items: center; 
     justify-content: left;
+}
+
+.sign-in-cart {
+    text-align: end;
+    margin-left: 3em;
 }
 
 .nav-link:link{
