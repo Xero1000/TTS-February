@@ -20,9 +20,8 @@
     justify-content: left;
 }
 
-.sign-in-cart {
-    text-align: end;
-    margin-left: 3em;
+.btn {
+    margin-right: 1em;
 }
 
 .nav-link:link{
@@ -74,21 +73,6 @@ li {
     color: white;
     font-family: 'Proza Libre', sans-serif;
 }
-
-/* input{
-    width: 500px;
-    height: 30px;
-} */
-
-form{
-    /* display: flex;
-    height: 100%;
-    align-items: center; */
-}
-
-/* form a{
-    line-height: 36px;
-} */
 
 img{
     width: 600px;
