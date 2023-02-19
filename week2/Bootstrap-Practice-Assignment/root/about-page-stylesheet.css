@@ -1,4 +1,4 @@
-#cart-icon {
+/* #cart-icon {
     width: 20px;
     height: 20px;
     filter: invert(1);
@@ -9,7 +9,7 @@
     width: 12px;
     height: 12px;
     filter: invert(1);
-}
+} */
 
 #lift-off {
     height: 500px;
@@ -22,7 +22,7 @@
     box-shadow: 20px 20px 100px orange;
 }
 
-.nav-list {
+/* .nav-list {
     display: grid;
     background-color: black;
     width: 100%;
@@ -58,7 +58,7 @@
     padding-left: 40px;
     align-items: center; 
     justify-content: left;
-}
+} */
 
 h1, h2, p{
     font-family: 'Space Mono', monospace;
@@ -81,18 +81,18 @@ li {
     font-family: 'Proza Libre', sans-serif;
 }
 
-input{
+/* input{
     width: 500px;
     height: 30px;
-}
+} */
 
-form{
+/* form{
     display: flex;
     height: 100%;
     align-items: center;
-}
+} */
 
-a:link{
+/* a:link{
     text-decoration: none;
     color: white;
 }
@@ -104,8 +104,8 @@ a:visited{
 
 a:hover{
     color: red;
-}
+} */
 
-form a{
+/* form a{
     line-height: 36px;
-}
+} */

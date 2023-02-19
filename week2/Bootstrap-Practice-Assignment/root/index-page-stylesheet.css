@@ -1,43 +1,3 @@
-#cart-icon{
-    width: 20px;
-    height: 20px;
-    filter: invert(1);
-    object-position: 0px 4px;
-}
-
-#search-icon{
-    width: 12px;
-    height: 12px;
-    filter: invert(1);
-}
-
-.nav-list {
-    display: grid;
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    grid-template-columns: 3% repeat(3, 1fr) 4fr 4fr;
-    grid-template-rows: 100%;
-    margin: 0;
-}
-
-.logo{
-    background-color: red;
-    text-align: center;
-    line-height: 50px;
-    height: 100%;
-}
-
-.nav-link{
-    text-align: center;
-    line-height: 50px;
-}
-
-.end-nav-link{
-    text-align: end;
-    line-height: 25px;
-}
-
 .footer-list {
     display: flex;
     background-color: black;
@@ -82,28 +42,28 @@ input{
 }
 
 form{
-    display: flex;
+    /* display: flex;
     height: 100%;
-    align-items: center;
+    align-items: center; */
 }
 
 a:link{
-    text-decoration: none;
-    color: white;
+    /* text-decoration: none;
+    color: white; */
 }
 
 a:visited{
-    text-decoration: none;
-    color: white;
+    /* text-decoration: none;
+    color: white; */
 }
 
 a:hover{
-    color: red;
+    /* color: red; */
 }
 
-form a{
+/* form a{
     line-height: 36px;
-}
+} */
 
 img{
     width: 600px;
