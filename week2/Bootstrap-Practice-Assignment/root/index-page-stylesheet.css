@@ -31,7 +31,6 @@
     padding-top: 5px;
 }
 
-
 p {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -86,8 +85,34 @@ img{
     box-shadow: 20px 20px 50px;
 }
 
+footer .row {
+    margin-left: 3rem;
+}
+
 img:hover{
     box-shadow: 20px 20px 50px orange;
+}
+
+footer {
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+a:visited{
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover{
+     color: red; 
 }
 
 

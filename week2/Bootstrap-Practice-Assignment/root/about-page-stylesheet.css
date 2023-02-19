@@ -115,3 +115,29 @@ li {
 /* form a{
     line-height: 36px;
 } */
+
+footer {
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;    
+}
+
+footer .row {
+    margin-left: 3rem;
+}
+
+a:link{
+    text-decoration: none;
+    color: white; 
+}
+
+a:visited{
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover{
+     color: red; 
+}
