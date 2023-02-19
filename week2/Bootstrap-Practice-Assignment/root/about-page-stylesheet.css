@@ -10,16 +10,36 @@
     height: 12px;
     filter: invert(1);
 } */
+#mission-heading{
+    text-align: center;
+}
 
 #lift-off {
     height: 500px;
     box-shadow: 20px 20px 100px;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
 #lift-off:hover {
     box-shadow: 20px 20px 100px orange;
+}
+
+.navbar-nav{
+    padding-top: 5px;
+}
+
+.nav-link:link{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link:visited{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link:hover{
+     color: red; 
 }
 
 /* .nav-list {
@@ -90,20 +110,6 @@ li {
     display: flex;
     height: 100%;
     align-items: center;
-} */
-
-/* a:link{
-    text-decoration: none;
-    color: white;
-}
-
-a:visited{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: red;
 } */
 
 /* form a{

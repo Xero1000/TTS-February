@@ -1,3 +1,7 @@
+#ticket-heading{
+    text-align: center;
+}
+
 .nav-list {
     /* display: grid;
     background-color: black;
@@ -46,8 +50,31 @@
     line-height: 30%;
 }
 
-h1, h2{
+.navbar-nav{
+    padding-top: 5px;
+}
+
+.nav-link:link{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link:visited{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link:hover{
+     color: red; 
+}
+
+h1{
     font-family: 'Space Mono', monospace;
+}
+
+h2{
+    font-family: 'Space Mono', monospace;
+    text-align: center;
 }
 
 span {
@@ -67,33 +94,15 @@ li {
     font-family: 'Proza Libre', sans-serif;
 }
 
-input{
+/* input{
     width: 500px;
     height: 30px;
-}
+} */
 
 form{
     display: flex;
-    height: 100%;
     align-items: center;
-}
-
-/* a:link{
-    text-decoration: none;
-    color: white;
-}
-
-a:visited{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: red;
-} */
-
-form a{
-    line-height: 36px;
+    justify-content: center;
 }
 
 img{

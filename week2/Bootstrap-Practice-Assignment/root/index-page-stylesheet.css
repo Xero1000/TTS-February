@@ -1,3 +1,7 @@
+#trip-heading{
+    text-align: center;
+}
+
 .footer-list {
     display: flex;
     background-color: black;
@@ -9,14 +13,38 @@
     justify-content: left;
 }
 
+.nav-link:link{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link:visited{
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link:hover{
+     color: red; 
+}
+
+.navbar-nav{
+    padding-top: 5px;
+}
+
+
 p {
     margin-top: 50px;
     margin-bottom: 50px;
     font-family: 'Space Mono', monospace;
 }
 
-h1, h2{
+h1{
     font-family: 'Space Mono', monospace;
+}
+
+h2{
+    font-family: 'Space Mono', monospace;
+    text-align: center;
 }
 
 span {
@@ -36,29 +64,15 @@ li {
     font-family: 'Proza Libre', sans-serif;
 }
 
-input{
+/* input{
     width: 500px;
     height: 30px;
-}
+} */
 
 form{
     /* display: flex;
     height: 100%;
     align-items: center; */
-}
-
-a:link{
-    /* text-decoration: none;
-    color: white; */
-}
-
-a:visited{
-    /* text-decoration: none;
-    color: white; */
-}
-
-a:hover{
-    /* color: red; */
 }
 
 /* form a{
