@@ -8,16 +8,18 @@ let list = {
         this.items.push(item);
         let newLI = document.createElement('li');
         newLI.textContent = item;
-
         ul.appendChild(newLI);
         textBox.value = '';
+        console.log(this.items);
     },
     delete: function(item) {
         let itemIndex = this.items.indexOf(item);
         ul.children[itemIndex].style.textDecoration = "line-through";
+        console.log(itemIndex);
         setTimeout(() => {
             ul.children[itemIndex].remove();
             this.items.splice(itemIndex, 1);
+            console.log(this.items);
         }, 1000);
     }
 }

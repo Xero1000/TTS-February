@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author alexh
+ *
+ */
+module MadLib {
+}
