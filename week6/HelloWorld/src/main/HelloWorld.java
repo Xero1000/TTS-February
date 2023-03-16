@@ -118,9 +118,69 @@ public class HelloWorld {
 		// double TAX_RATE = 7.0;
 		
 // Scope and Modifiers
-		ScopeExamples scopeExamples = new ScopeExamples();
-		scopeExamples.aClassVariable = 2;
-		scopeExamples.methodOne();
+//		ScopeExamples scopeExamples = new ScopeExamples();
+//		scopeExamples.aClassVariable = 2;
+//		scopeExamples.methodOne();
+
+// Compare
+//		Integer a = 2;
+//		Integer b = 1;
+//		System.out.println(Integer.compare(a, b));
+
+// String type
+		// Two ways to make the string
+		// Literal assignment or string constructor
+//		String s1 = "Hello";
+//		String s2 = new String("World");
+//		
+//		String longGreeting = s1 + " " + s2 + " from Java!";
+//		// longGreeting will now be "Hello World from Java!"
+//		
+//		int ndex = longGreeting.indexOf('W');             // ndex equal to 6
+//		int last = longGreeting.lastIndexOf('o');         // last equal to 14
+//		boolean contains = longGreeting.contains("fro");  // true
+//		boolean starts = longGreeting.startsWith("h");    // false
+//		char charVal = longGreeting.charAt(10);           // 'd'
+//		String lan = longGreeting.substring(17);          // lan = Java!
+//		String planet = longGreeting.substring(6, 11);    // planet = World
+//		boolean noNums = longGreeting.matches("d+");      // false - regular expression search for any number
+//		
+//		String str = String.format("%s was found at position %d.", planet, ndex);
+		
+// String Comparison (Using Object.equals())
+		// Using Object.equals() checks value equality and is best for string comparisons
+		// Strings are objects so object.equals() works
+//		String word1 = "Hello";
+//		String word2 = "Hello";
+//		String word3 = "Goodbye";
+//
+//		word1.equals(word2); //true
+//		word1.equals(word3); //false
+//
+//		// These two have the same value
+//		new String("Hello World").equals("Hello World") // --> true 
+//
+//		// "==" checks if they are the same object, and they are not the same object
+//		//One is a string object the other is a literal
+//		new String("Hello World") == "Hello World" // --> false 
+//
+//		// These are both String objects, but not the same 
+//		new String("Hello World") == new String("Hello World") // --> false 
+//
+//		// Literals are interned strings and seen as the same object by the compiler 
+//		"test" == "test" // --> true 
+//
+//		// String literals are concatenated by the compiler yet the results are not seen as the same object.
+//		"Hello World" == "Hello " + "World" // --> false
+//
+//		String str1 = new String("Hello World");
+//		String str2 = new String("Hello World");
+//		
+//		System.out.println(str1 == str2); // return false 
+//		System.out.println(str1.equals(str2)); // return true
+		
+		guessingGame();
+		//andOrExercise();
 	}
 	
 //	public static void madLib() {
@@ -140,9 +200,40 @@ public class HelloWorld {
 //			System.out.print("You are below the limit");
 //		}
 //	}
+	
+	public static void guessingGame() {
+		Scanner in = new Scanner(System.in);
+		
+		int answer = 7;
+		System.out.println("Enter a number between 1 and 10: ");
+		int guess = Integer.parseInt(in.nextLine());
+		
+		if (guess == answer) {
+			System.out.println("Wow!");
+		}
+		else {
+			System.out.println("Nope!");
+		}
+	}
 
 	public static void andOrExercise() {
+		Scanner in = new Scanner(System.in);
 		
+		int answer = 69;
+		System.out.println("Enter a number between 1 and 100: ");
+		int guess = Integer.parseInt(in.nextLine());
+		
+		if (guess == answer) {
+			System.out.println("Wow!");
+		}
+		else {
+			if (answer - guess <= 5 && answer - guess >= -5) {
+				System.out.println("Oh! So close!");
+			}
+			else {
+				System.out.println("Nope!");
+			}
+		}		
 	}
 }
 

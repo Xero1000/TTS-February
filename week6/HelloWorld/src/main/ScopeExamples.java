@@ -4,7 +4,7 @@ public class ScopeExamples
 {
 	  // a class-level variable
 	  int aClassVariable = 0;
-	
+	  
 	  public void methodOne()
 	  {
 	    // a method-level variable - accessible anywhere in methodOne()
