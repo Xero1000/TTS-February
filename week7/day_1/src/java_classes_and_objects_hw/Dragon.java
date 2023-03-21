@@ -1,4 +1,4 @@
-package hw;
+package java_classes_and_objects_hw;
 
 public class Dragon {
 	
