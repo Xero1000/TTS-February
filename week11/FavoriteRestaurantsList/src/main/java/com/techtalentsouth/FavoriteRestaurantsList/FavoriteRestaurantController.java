@@ -27,13 +27,13 @@ public class FavoriteRestaurantController {
 		return "favoriteRestaurant/newEntry";
 	}
 	
-	@PostMapping(value="/")
+	@PostMapping(value="/resultPage")
 	public String addNewRestaurant(Restaurant restaurant, Model model) {
 		restaurantRepository.save(restaurant);
 		entries.add(restaurant);
 		model.addAttribute("name", restaurant.getName());
 		model.addAttribute("websiteLink", restaurant.getWebsiteLink());
 		model.addAttribute("pictureLink", restaurant.getPictureLink());
-		return "favoriteRestaurant/index";
+		return "favoriteRestaurant/result";
 	}
 }
