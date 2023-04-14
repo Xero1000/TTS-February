@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Favorite Restaurant Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<h1>Make a List of Your Favorite Restaurants!</h1>
+			    <a th:href="@{/new}">
+			  			<button class="btn btn-primary">Create New Entry</button>
+				</a>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div th:each="restaurant:${entries}">
+  				<div class="col-md-12">
+  					<h3 th:text="${restaurant.name}"></h3>
+  					<h4 th:text="${restaurant.websiteLink}"></h4>
+  					<img th:src="${restaurant.pictureLink}"/>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+	<script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+  </body>
+</html>
