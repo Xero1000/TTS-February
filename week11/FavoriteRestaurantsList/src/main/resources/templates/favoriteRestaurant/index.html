@@ -23,6 +23,9 @@
   						<h4 th:text="${restaurant.websiteLink}"></h4>
   					</a>
   					<img th:src="${restaurant.pictureLink}"/>
+  					<a th:href="@{editPage/{id}(id=${restaurant.id})}">
+			  			<button class="btn btn-primary">Edit Entry</button>
+					</a>
   					<a th:href="@{deletePage/{id}(id=${restaurant.id})}">
 			  			<button class="btn btn-danger">Delete Entry</button>
 					</a>

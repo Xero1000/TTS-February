@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Favorite Restaurant Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="container">
+  		<div class=row>
+  			<div class="col-md-12">
+  				<h1>Edit Restaurant Information Below</h1>
+			    <form action="#" th:action="@{/editPage/{id} (id=${id})}" th:object="${restaurant}" method="post">
+			    	<table>
+						<tr>
+						    <td>
+						    	<label for="name">Name of Restaurant: </label>
+			    				<input type="text" id="name" th:field="*{name}" />
+			    			</td>
+						</tr>
+						<tr>
+						    <td>
+						    	<label for="site">Restaurant Site Link: </label>
+			    				<input type="text" id="site" th:field="*{websiteLink}" />	
+						    </td>
+						</tr>
+						<tr>
+						    <td>
+						    	<label for="picture">Restaurant Image Link: </label>
+			    				<input type="text" id="picture" th:field="*{pictureLink}" />
+						    </td>
+						</tr>
+						<tr>
+						    <td><button type="submit">Submit</button></td>
+						</tr>
+				    </table>
+			    </form>
+  			</div>
+  		</div>
+  	</div>
+    <script src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+  </body>
+</html>
