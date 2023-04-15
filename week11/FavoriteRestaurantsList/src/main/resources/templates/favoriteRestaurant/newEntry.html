@@ -4,34 +4,39 @@
     <title>Favorite Restaurant Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/favoriteRestaurant.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+  	<!-- Page where user enters information for a new entry -->
+  	<!-- Restaurant name, link to site, link to picture of restaurant -->
   	<div class="container">
-  		<div class=row>
-  			<div class="col-md-12">
+  		<div class="row">
+  			<div class="col-md-12 flex-col full-page justify-center">
   				<h1>Enter Restaurant Information Below</h1>
 			    <form action="#" th:action="@{/resultPage}" th:object="${restaurant}" method="post">
 			    	<table>
 						<tr>
-						    <td>
+						    <td class="flex-row">
 						    	<label for="name">Name of Restaurant: </label>
 			    				<input type="text" id="name" th:field="*{name}" />
 			    			</td>
 						</tr>
 						<tr>
-						    <td>
+						    <td class="flex-row">
 						    	<label for="site">Restaurant Site Link: </label>
 			    				<input type="text" id="site" th:field="*{websiteLink}" />	
 						    </td>
 						</tr>
 						<tr>
-						    <td>
+						    <td class="flex-row">
 						    	<label for="picture">Restaurant Image Link: </label>
 			    				<input type="text" id="picture" th:field="*{pictureLink}" />
 						    </td>
 						</tr>
 						<tr>
-						    <td><button type="submit">Submit</button></td>
+						    <td class="flex-row justify-center">
+						    	<button class="btn btn-primary" type="submit">Submit</button>
+						    </td>
 						</tr>
 				    </table>
 			    </form>

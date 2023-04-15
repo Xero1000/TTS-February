@@ -4,31 +4,37 @@
     <title>Favorite Restaurant Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/favoriteRestaurant.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+  	<!-- The home page -->
   	<div class="container">
+  		<!-- First row is for header and the create entry button -->
   		<div class="row">
-  			<div class="col-md-12">
+  			<div class="col-md-12 flex-col">
   				<h1>Make a List of Your Favorite Restaurants!</h1>
 			    <a th:href="@{/new}">
 			  			<button class="btn btn-primary">Create New Entry</button>
 				</a>
   			</div>
   		</div>
+  		<!-- Each entry is given a column spanning the width of the row -->
   		<div class="row">
   			<div th:each="restaurant:${entries}">
-  				<div class="col-md-12">
+  				<div class="col-md-12 flex-col">
   					<h3 th:text="${restaurant.name}"></h3>
   					<a th:href="${restaurant.websiteLink}">
   						<h4 th:text="${restaurant.websiteLink}"></h4>
   					</a>
   					<img th:src="${restaurant.pictureLink}"/>
-  					<a th:href="@{editPage/{id}(id=${restaurant.id})}">
-			  			<button class="btn btn-primary">Edit Entry</button>
-					</a>
-  					<a th:href="@{deletePage/{id}(id=${restaurant.id})}">
-			  			<button class="btn btn-danger">Delete Entry</button>
-					</a>
+  					<div>
+	  					<a th:href="@{editPage/{id} (id=${restaurant.id})}">
+				  			<button class="btn btn-primary">Edit Entry</button>
+						</a>
+	  					<a th:href="@{deletePage/{id} (id=${restaurant.id})}">
+				  			<button class="btn btn-danger">Delete Entry</button>
+						</a>
+  					</div>
   				</div>
   			</div>
   		</div>

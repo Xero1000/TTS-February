@@ -4,11 +4,13 @@
     <title>Favorite Restaurant Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="../../webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/favoriteRestaurant.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+  	<!-- Page for displaying information for a newly created entry -->
   	<div class="container">
   		<div class="row">
-  			<div class="col-md-12">
+  			<div class="col-md-12 flex-col">
   				<h1>Your Favorite Restaurants List Has Been Updated!</h1>
 			    <h3 th:text="${name}"></h3>
 			    <h4 th:text="${websiteLink}"></h4>

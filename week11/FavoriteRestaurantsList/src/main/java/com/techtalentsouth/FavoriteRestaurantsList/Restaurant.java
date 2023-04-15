@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 @Entity 
 public class Restaurant {
 	
+	// id is the primary key and is auto generated
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
@@ -17,16 +18,20 @@ public class Restaurant {
 	private String websiteLink;
 	private String pictureLink;
 	
+	// empty constructor
 	public Restaurant() {
 		
 	}
 	
+	// argument constructor
 	public Restaurant(String name, String websiteLink, String pictureLink) {
 		this.name = name;
 		this.websiteLink = websiteLink;
 		this.pictureLink = pictureLink;
 	}
 	
+	// getters and setters
+	// id has a getter, but no setter
 	public Long getId() {
 		return id;
 	}
@@ -55,6 +60,7 @@ public class Restaurant {
 		this.pictureLink = pictureLink;
 	}
 
+	// toString method
 	@Override
 	public String toString() {
 		return "Restaurant [id=" + id + ", name=" + name + ", websiteLink=" + websiteLink + ", pictureLink="
