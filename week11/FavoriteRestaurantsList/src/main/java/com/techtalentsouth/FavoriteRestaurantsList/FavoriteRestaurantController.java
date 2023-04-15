@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller 
@@ -17,7 +18,11 @@ public class FavoriteRestaurantController {
 	private static List<Restaurant> entries = new ArrayList<>();
 	
 	@GetMapping(value="/")
-	public String index(Restaurant restaurant, Model model) {
+	public String index(Model model) {
+		entries.removeAll(entries);
+		for (Restaurant restaurant : restaurantRepository.findAll()) {
+			entries.add(restaurant);
+		}
 		model.addAttribute("entries", entries);
 		return "favoriteRestaurant/index";
 	}
@@ -35,5 +40,11 @@ public class FavoriteRestaurantController {
 		model.addAttribute("websiteLink", restaurant.getWebsiteLink());
 		model.addAttribute("pictureLink", restaurant.getPictureLink());
 		return "favoriteRestaurant/result";
+	}
+	
+	@GetMapping(path="/deletePage/{id}")
+	public String deleteEntry(@PathVariable Long id) {
+		restaurantRepository.deleteById(id);
+		return "favoriteRestaurant/delete";
 	}
 }

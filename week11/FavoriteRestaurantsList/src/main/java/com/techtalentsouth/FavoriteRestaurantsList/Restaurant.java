@@ -26,6 +26,10 @@ public class Restaurant {
 		this.websiteLink = websiteLink;
 		this.pictureLink = pictureLink;
 	}
+	
+	public Long getId() {
+		return id;
+	}
 
 	public String getName() {
 		return name;
